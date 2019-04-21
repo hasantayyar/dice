@@ -1,8 +1,18 @@
+
 <html>
 <!-- the dice design is taken from here https://codepen.io/dzsobacsi/pen/pjxEOK -->
+  <title>Dice</title>
+  <link rel="canonical" href="https://hasantayyar.github.io/dice/" />
 
+<style type="text/css">
+    *{
+      margin: 0px;
+      padding: 0px;
+      background-color: #fff
+    }
+    </style>
 <head>
-<head>
+</head>
 <body>
 
 <canvas style="cursor: pointer" id="c"> </canvas>
@@ -101,6 +111,10 @@ function roundRect(ctx, x, y, width, height, radius, fill, stroke) {
     ctx.stroke();
   }
 
+}
+
+if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('/dice/sw.js', {scope: '/dice/'})
 }
 </script>
 </body>
