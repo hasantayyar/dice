@@ -1,3 +1,4 @@
+// taken from https://gist.github.com/kosamari/7c5d1e8449b2fbc97d372675f16b566e
 let APP_PREFIX = 'ROLL_DICE_77875501_'     // Identifier for this app (this needs to be consistent across every cache update)
 let VERSION = 'version_01'              // Version of the off-line cache (change this value everytime you want to update cache)
 let CACHE_NAME = APP_PREFIX + VERSION
@@ -57,5 +58,4 @@ self.addEventListener('activate', function (e) {
     })
   )
 })
- @jpraet
 
